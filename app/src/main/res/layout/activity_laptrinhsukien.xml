@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".laptrinhsukien">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Cac kieu lap trinh su kien"
+            android:gravity="center"
+            android:background="#00FF00"/>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="So a:"
+                />
+
+            <EditText
+                android:id="@+id/aTextview"
+                android:layout_width="match_parent"
+                android:hint="nhap so a"
+                android:padding="20dp"
+                >
+
+            </EditText>
+
+        </GridLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="So b:"
+                />
+
+            <EditText
+                android:id="@+id/bTextview"
+                android:layout_width="match_parent"
+                android:hint="nhap so b"
+                android:padding="20dp"
+                >
+
+            </EditText>
+
+        </GridLayout>
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FF00"
+        android:text="0"
+        android:gravity="center"
+        android:padding="5dp"
+        >
+
+    </TextView>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnTong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tong 2 so"
+            android:backgroundTint="#C0C0C0"
+            android:textColor="@color/black"
+            >
+        </Button>
+        <Button
+            android:id="@+id/btnHieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hieu 2 so"
+            android:backgroundTint="#C0C0C0"
+            android:textColor="@color/black"
+            >
+        </Button>
+        <Button
+            android:id="@+id/btnTich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tich 2 so"
+            android:backgroundTint="#C0C0C0"
+            android:textColor="@color/black"
+            >
+        </Button>
+        <Button
+            android:id="@+id/btnThuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thuong 2 so"
+            android:backgroundTint="#C0C0C0"
+            android:textColor="@color/black"
+            >
+        </Button>
+        <Button
+            android:id="@+id/btnUocchunglonnhat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Uoc chung lon nhat"
+            android:backgroundTint="#C0C0C0"
+            android:textColor="@color/black"
+            >
+        </Button>
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thoat chuong trinh"
+            android:backgroundTint="#C0C0C0"
+            android:textColor="#FF0000"
+            >
+        </Button>
+
+    </GridLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

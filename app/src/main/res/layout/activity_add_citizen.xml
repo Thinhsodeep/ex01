@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddCitizenActivity">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Thêm Công Dân"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Họ tên -->
+    <TextView
+        android:id="@+id/txtNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Họ và tên:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập họ và tên"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/txtNameLabel"
+        app:layout_constraintStart_toEndOf="@id/txtNameLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp"/>
+
+    <!-- Số chứng minh nhân dân -->
+    <TextView
+        android:id="@+id/txtIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số CMND:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/edtName"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số CMND"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/txtIdLabel"
+        app:layout_constraintStart_toEndOf="@id/txtIdLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <!-- Địa chỉ -->
+
+    <TextView
+        android:id="@+id/txtAddressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/edtId"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập địa chỉ"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/txtAddressLabel"
+        app:layout_constraintStart_toEndOf="@id/txtAddressLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:padding="10dp"/>
+
+    <!-- Các nút hành động -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="?attr/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/edtAddress"
+        app:layout_constraintEnd_toStartOf="@+id/btnClear"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Xoá"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_red_light"
+        app:layout_constraintTop_toBottomOf="@id/edtAddress"
+        app:layout_constraintStart_toEndOf="@id/btnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Đóng"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="?attr/colorAccent"
+        app:layout_constraintTop_toBottomOf="@id/btnClear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
